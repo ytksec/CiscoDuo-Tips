@@ -29,3 +29,23 @@ https://www.cisco.com/c/ja_jp/products/security/adaptive-multi-factor-authentica
 ### オンプレADを認証ソースとする場合
 
 オンプレミス(IaaS)設置のADからID情報を連携させる際は、以下のような構成を取ります。
+<img width="480" alt="スクリーンショット 2021-01-23 10 26 43" src="https://user-images.githubusercontent.com/76857288/107777296-f6957500-6d85-11eb-9473-aeb5caafa732.png">  
+引用：https://duo.com/docs/adsync  
+オンプレミス環境にDuo Authentication Proxy(DAP)というソフトウェアをインストールし、DuoとADの連携の役割をさせます。  
+DAPはアウトバウンドのみの通信となり、DMZに設置する必要はありません。  
+
+※Duo Authentication ProxyのインストールOS要件  
+
++ Windows Server 2012 or later (Server 2016 or 2019 recommended)  
++ CentOS 7 or later  
++ Red Hat Enterprise Linux 7 or later  
++ Ubuntu 16.04 or later  
++ Debian 7 or later.  
+
+※必要サーバスペック  
+
+at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually sufficient)  
+
+参考元：https://duo.com/docs/authproxy-reference  
+
+この構成が出来上がると、以下のような構成でユーザー認証、SSO先へのログインができるようになります。  
