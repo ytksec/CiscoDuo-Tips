@@ -49,3 +49,11 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 参考元：https://duo.com/docs/authproxy-reference  
 
 この構成が出来上がると、以下のような構成でユーザー認証、SSO先へのログインができるようになります。  
+
+<img width="777" alt="スクリーンショット 2021-01-23 10 37 16" src="https://user-images.githubusercontent.com/76857288/107777807-ad91f080-6d86-11eb-8f2e-19182403f4c4.png">  
+
+引用元：https://duo.com/docs/sso
+ユーザはSSO（SAML連携）先として登録しているSaaSなどのサイト(SP)へログインを試みると、Duoのログイン画面に遷移し、裏でADとの認証、MFAを実施した上でサイトへ安全にログインすることが出来ます。
+
+以前はDuo Access Gateway(DAG)が必要でしたが、2020年末よりCloud SSO機能がリリースされたため、オンプレADとの連携の際にDMZにDAGを設置する必要がなくなりました。  
+これにより、DAGを公開するというリスクが減り、よりDuoを導入しやすくなったのではないかと思います。  
