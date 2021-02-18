@@ -58,7 +58,7 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 以前はDuo Access Gateway(DAG)が必要でしたが、2020年末よりCloud SSO機能がリリースされたため、オンプレADとの連携の際にDMZにDAGを設置する必要がなくなりました。  
 これにより、DAGを公開するというリスクが減り、よりDuoを導入しやすくなったのではないかと思います。  
 
-## Cisco Umbrellaにてプロキシ認証を実施する場合の構成(SP-iniciate)
+## Cisco UmbrellaをSP、DuoをidPとした場合のSAML構成例(SP-iniciate)
 
 [Cisco Japan Blog](https://gblogs.cisco.com/jp/2020/04/secure-remote-work-with-policy-control-with-umbrella-swg-proxy-authentication-and-multi-factor-authentication-with-duo-security/)
 
