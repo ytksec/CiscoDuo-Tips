@@ -6,6 +6,25 @@ Cisco Duo Securityの機能、構成、主な技術解説をまとめていき�
 
 https://www.cisco.com/c/ja_jp/products/security/adaptive-multi-factor-authentication.html  
 
+## Duo ユーザマニュアル
+
+ユーザ視点で、インストール方法など詳しく記載されているのでオススメ  
+https://guide.duo.com/  
+
+## 認証アプリ(Duo Mobile)対応端末
+
+| OS | 対応可否 |
+| ------------- | ------------- |
+| Windows  | ○  |
+| Mac  | ○  |
+| iOS  | ○  |
+| Android  | ○  |
+| Windows Phone  | ○  |
+| Blackberry  | ○  |
+| Apple Watch  | ○  |
+
+最新情報はこちらを参照。https://guide.duo.com/
+
 ## 主な機能
 
 + ２要素認証  
