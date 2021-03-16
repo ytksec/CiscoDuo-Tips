@@ -7,10 +7,11 @@ Cisco Duo Securityの機能、構成、主な技術解説をまとめていき�
 
 https://www.cisco.com/c/ja_jp/products/security/adaptive-multi-factor-authentication.html  
 
-## Duo ユーザマニュアル
+## Duo マニュアル
 
-ユーザ視点で、インストール方法など詳しく記載されているのでオススメ  
-https://guide.duo.com/  
++ [ユーザーマニュアル](https://guide.duo.com/)・・・ユーザ視点で、インストール方法など詳しく記載されているのでオススメ
++ [設定ドキュメント](https://duo.com/docs/)・・・管理者、エンジニア視点のドキュメント。目当てのページに行きにくいので、ページ下にピックアップしてリンク記載。  
+  
 
 ## 認証アプリ(Duo Mobile)対応端末
 
