@@ -87,5 +87,8 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 
 ## 2要素認証について
 
-こちらを参照  
+こちらにまとめてみました。  
 https://github.com/ytksec/CiscoDuo-Tips/blob/main/Duo-2factor-auth.md
+
+## その他設定関連のDuoドキュメント
++ [Trust Monitor](https://duo.com/docs/trust-monitor)
