@@ -11,6 +11,7 @@ https://www.cisco.com/c/ja_jp/products/security/adaptive-multi-factor-authentica
 
 + [ユーザーマニュアル](https://guide.duo.com/)・・・ユーザ視点で、インストール方法など詳しく記載されているのでオススメ
 + [設定ドキュメント](https://duo.com/docs/)・・・管理者、エンジニア視点のドキュメント。目当てのページに行きにくいので、ページ下にピックアップしてリンク記載。  
++ [Knowledge Base,Help](https://help.duo.com/s/?language=en_US)
   
 
 ## 認証アプリ(Duo Mobile)対応端末
