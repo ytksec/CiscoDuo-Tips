@@ -94,3 +94,4 @@ https://github.com/ytksec/CiscoDuo-Tips/blob/main/Duo-2factor-auth.md
 
 ## その他設定関連のDuoドキュメント
 + [Trust Monitor](https://duo.com/docs/trust-monitor)
++ [Duo Sigle Sign On](https://duo.com/docs/sso)
