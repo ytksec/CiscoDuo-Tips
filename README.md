@@ -48,7 +48,7 @@ https://www.cisco.com/c/ja_jp/products/security/adaptive-multi-factor-authentica
 大前提として、Duoはユーザのパスワード保存は行わず、常に認証ソースへ認証の問い合わせを行います。そのため、どこを認証のソース(idP)とするかは重要な設計要素です。
 以下に主要な構成例を紹介していきます。  
 
-### オンプレADを認証ソースとする場合
+### オンプレADを認証ソースとする場合(ディレクトリ、ユーザ同期も可)
 
 オンプレミス(IaaS)設置のADからID情報を連携させる際は、以下のような構成を取ります。
 <img width="480" alt="スクリーンショット 2021-01-23 10 26 43" src="https://user-images.githubusercontent.com/76857288/107777296-f6957500-6d85-11eb-9473-aeb5caafa732.png">  
@@ -81,7 +81,23 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 これにより、DAGを公開するというリスクが減り、よりDuoを導入しやすくなったのではないかと思います。  
 
 ### Duo Authentication Proxyを冗長化する場合  
-参考リンク　[Duo knowledge](https://help.duo.com/s/article/authentication-proxy-availability?language=en_US)
+参考リンク　[Duo knowledge](https://help.duo.com/s/article/authentication-proxy-availability?language=en_US)  
+
+### 各SAML Identity Providerを認証ソースとする場合
+
+![構成イメージ](https://github.com/ytksec/CiscoDuo-Tips/blob/main/img/Duo-SAMLidP.jpg)  
+引用：https://duo.com/docs/sso  
+
+Duoは各SAML Identity Providerを認証ソースとしてシングルサインオンをすることが可能。  
+Okta、Azure AD、ADFS、Ping Identity、One Login、他Identity Providerと連携を行うことが出来る。
+
+### Azure ADとディレクトリ同期をする場合
+
+![構成イメージ](https://github.com/ytksec/CiscoDuo-Tips/blob/main/img/Duo-AzureAD.jpg)  
+引用：https://duo.com/docs/azuresync
+
+Azure ADとディレクトリ、ユーザ同期をすることが可能であり、オンプレADと同期をするよりも可用性もあり、推奨。  
+[設定方法はこちらを参照](https://duo.com/docs/azuresync)
 
 ## 2要素認証について
 
