@@ -91,6 +91,14 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 Duoは各SAML Identity Providerを認証ソースとしてシングルサインオンをすることが可能。  
 Okta、Azure AD、ADFS、Ping Identity、One Login、他Identity Providerと連携を行うことが出来る。
 
+イメージとして、DuoとBoxでSAML連携設定しておき、SSOのプライマリ認証をOktaとしていた場合、
+BoxからSSO認証しようとすると、Oktaの画面へ遷移しログインを実施する形になる。  
+[設定例はこちら](https://duo.com/docs/sso)
+
+所感では、Oktaや他idPを主で管理している場合は、各SaaSへのSAML設定も一緒に行っている場合が多いのではないかと思われる。  
+その場合、Duoの認証ソースとしてidPを利用するのではなく、DuoをMFAツールとして利用するという選択肢もある。  
+ただし、Duoのアプリケーション保護でグループやデバイスごとに細かく制御を分けたい、Duoのデバイストラスト等の機能を利用したい等であれば、この構成のようにDuoをから各アプリケーションをSAML連携させる形が良いと思われる。
+
 ### Azure ADとディレクトリ同期をする場合
 
 ![構成イメージ](https://github.com/ytksec/CiscoDuo-Tips/blob/main/img/Duo-AzureAD.jpg)  
