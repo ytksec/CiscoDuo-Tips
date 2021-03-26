@@ -83,14 +83,19 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 ### Duo Authentication Proxyを冗長化する場合  
 参考リンク　[Duo knowledge](https://help.duo.com/s/article/authentication-proxy-availability?language=en_US)
 
-## Cisco UmbrellaをSP、DuoをidPとした場合のSAML構成例(SP-iniciate)
-
-[Cisco Japan Blog](https://gblogs.cisco.com/jp/2020/04/secure-remote-work-with-policy-control-with-umbrella-swg-proxy-authentication-and-multi-factor-authentication-with-duo-security/)
-
 ## 2要素認証について
 
 こちらにまとめてみました。  
 https://github.com/ytksec/CiscoDuo-Tips/blob/main/Duo-2factor-auth.md
+
+## Cisco Anyconnectを用いてDuoとASA(Firepower)のSSOを実現するための構成例
+
++ [構成例はこちら](https://duo.com/docs/cisco)
++ [ASAの設定例はこちら](https://duo.com/docs/sso-ciscoasa)
+
+## Cisco UmbrellaをSP、DuoをidPとした場合のSAML構成例(SP-iniciate)
+
+[Cisco Japan Blog](https://gblogs.cisco.com/jp/2020/04/secure-remote-work-with-policy-control-with-umbrella-swg-proxy-authentication-and-multi-factor-authentication-with-duo-security/)
 
 ## その他設定関連のDuoドキュメント
 + [Trust Monitor](https://duo.com/docs/trust-monitor)
