@@ -81,6 +81,7 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 これにより、DAGを公開するというリスクが減り、よりDuoを導入しやすくなったのではないかと思います。  
 
 ### Duo Authentication Proxy(DAP)について  
+DAPの概要、インストール方法　https://duo.com/docs/authproxy-reference
 基本的に冗長化が推奨　[Duo knowledge](https://help.duo.com/s/article/authentication-proxy-availability?language=en_US)  
 DAPのAD参加については必須ではない　https://help.duo.com/s/article/3329?language=en_US  
 
