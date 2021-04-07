@@ -80,8 +80,9 @@ at least 1 CPU, 200 MB disk space, and 4 GB RAM (although 1 GB RAM is usually su
 以前はDuo Access Gateway(DAG)が必要でしたが、2020年末よりCloud SSO機能がリリースされたため、オンプレADとの連携の際にDMZにDAGを設置する必要がなくなりました。  
 これにより、DAGを公開するというリスクが減り、よりDuoを導入しやすくなったのではないかと思います。  
 
-### Duo Authentication Proxyを冗長化する場合  
-参考リンク　[Duo knowledge](https://help.duo.com/s/article/authentication-proxy-availability?language=en_US)  
+### Duo Authentication Proxy(DAP)について  
+基本的に冗長化が推奨　[Duo knowledge](https://help.duo.com/s/article/authentication-proxy-availability?language=en_US)  
+DAPのAD参加については必須ではない　https://help.duo.com/s/article/3329?language=en_US  
 
 ### 各SAML Identity Providerを認証ソースとする場合
 
