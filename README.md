@@ -123,6 +123,9 @@ https://github.com/ytksec/CiscoDuo-Tips/blob/main/Duo-2factor-auth.md
 
 [Cisco Japan Blog](https://gblogs.cisco.com/jp/2020/04/secure-remote-work-with-policy-control-with-umbrella-swg-proxy-authentication-and-multi-factor-authentication-with-duo-security/)
 
+## Duo Authentication Proxy関連のドキュメント
++ [サービス停止・再起動方法(Windows,Linux)](https://help.duo.com/s/article/2149?language=en_US)
+
 ## その他設定関連のDuoドキュメント
 + [Trust Monitor](https://duo.com/docs/trust-monitor)
 + [Duo Sigle Sign On](https://duo.com/docs/sso)
